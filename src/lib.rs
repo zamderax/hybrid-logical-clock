@@ -74,6 +74,8 @@ where
     pub fn add_logical_clock_ticks(&mut self, ticks: L) {
         self.logical_clock = self.logical_clock + ticks;    
     }
+
+    
 }
 
 impl<P, L> PartialOrd for HybridLogicalClock<P, L>
