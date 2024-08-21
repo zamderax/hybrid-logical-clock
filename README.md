@@ -3,6 +3,16 @@
 I built this crate to provide a hybrid logical clock in Rust so that I could learn about distributed systems. This is a work in progress and I will be adding more features to it in the future but it should be a good starting point for anyone looking to use a hybrid logical clock in their Rust project. This project is also ready for [no_std](https://docs.rust-embedded.org/book/intro/no-std.html) embedded environments.
 
 
+## Installation
+
+Add this to your `Cargo.toml`:
+
+```toml
+[dependencies]
+hybrid-logical-clock = "0.0.2"
+```
+
+
 ## Why use a hybrid logical clock?
 
 1. Physical clocks are not monotonic and unreliable in complex distributed systems. Each actor could be in a different geographic location, different network communcation health, and physical clock drift.
