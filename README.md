@@ -2,7 +2,13 @@
 
 I built this crate to provide a hybrid logical clock in Rust so that I could learn about distributed systems.
 
-## Use
+
+## Why use a hybrid logical clock?
+
+1. Physical clocks are not monotonic and unreliable in complex distributed systems. Each actor could be in a different geographic location, different network communcation health, and physical clock drift.
+2. We can use logical clocks to order events in a distributed system, they have no relation to physical time. If you need to query data between multiple actors using physical time for debugging purposes, you can't if the system only uses logical clocks.
+
+## How to use this crate
 
 You can create a new hybrid logical clock with the physical clock time set to the given value.
 
