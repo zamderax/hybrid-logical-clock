@@ -1,6 +1,6 @@
 # Hybrid Logical Clock in Rust
 
-I built this crate to provide a hybrid logical clock in Rust so that I could learn about distributed systems.
+I built this crate to provide a hybrid logical clock in Rust so that I could learn about distributed systems. This is a work in progress and I will be adding more features to it in the future but it should be a good starting point for anyone looking to use a hybrid logical clock in their Rust project. This project is also ready for [no_std](https://docs.rust-embedded.org/book/intro/no-std.html) embedded environments.
 
 
 ## Why use a hybrid logical clock?
